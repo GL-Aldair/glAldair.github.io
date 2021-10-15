@@ -13,7 +13,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --tipo-principal: 'Inter', sans-serif;
 }
 
-@media screen and (prefers-color-scheme:light) {
+@media screen and (prefers-color-scheme:dark) {
     :root {
         --blanco: #000;
         --blanco-4: rgba(0, 0, 0, .4);
