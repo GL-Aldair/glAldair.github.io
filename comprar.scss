@@ -580,7 +580,7 @@ footer {
         left: 0;
         right: 0;
         bottom: 0;
-        background: var(--negro-8);
+        background: var(--negro-7);
         display: none;
         position: fixed;
         z-index: 100;
@@ -597,12 +597,12 @@ footer {
     }
     
     .header-comprar .categorias .a {
-        color: var(--blanco-e);
         width: 100%;
-        transition: all .5s ease;
         margin: auto;
-        padding: calc(100% / 50) 0;
         text-align: center;
+        font-weight: 300;
+        color: var(--blanco-e);
+        transition: all .5s ease;
     }
 
     .header-comprar .categorias .a:hover {
