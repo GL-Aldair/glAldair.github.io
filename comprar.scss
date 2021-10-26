@@ -496,6 +496,18 @@ footer {
     }
 }
 
+@media screen and(max-width:600px) {
+    .social-media {
+        width: 60%;
+    }
+}
+
+@media screen and(max-width:550px) {
+    .social-media {
+        width: 70%;
+    }
+}
+
 @media screen and(max-width:530px) {
     .menu__container {
         height: 200px;
@@ -637,7 +649,11 @@ footer {
     }
 }
 
-
+@media screen and(max-width:500px) {
+    .social-media {
+        width: 75%;
+    }
+}
 
 @media screen and (max-width: 450px) {
     .menu__container {
