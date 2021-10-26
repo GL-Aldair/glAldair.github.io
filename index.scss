@@ -368,6 +368,34 @@ main .contenedor-img {
 }
 
 
+.btn-products {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+}
+
+.boton-products {
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+.ver-todos {
+    background: var(--blanco);
+    color: var(--rojo-b4);
+    border-radius: .4em;
+    border: 1px solid var(--rojo-b4);
+    padding: 1em 2em;
+    margin: auto;
+    transition: all .3s ease;
+}
+
+.ver-todos:hover {
+    background: var(--rojo-b4);
+    color: var(--blanco);
+}
+
+
 
 
 // 

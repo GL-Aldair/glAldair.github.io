@@ -387,6 +387,7 @@ footer {
     }
     
     .social-media {
+        // width: 70%;
         margin: auto;
         display: flex;
         justify-content: center;
@@ -399,6 +400,18 @@ footer {
 
     .maps {
         height: 300px;
+    }
+}
+
+@media screen and(max-width:600px) {
+    .social-media {
+        width: 60%;
+    }
+}
+
+@media screen and(max-width:550px) {
+    .social-media {
+        width: 70%;
     }
 }
 
@@ -465,8 +478,14 @@ footer {
     }
 
     .nosotros__p .nosotros__item .parrafo {
-        font-size: 1em;
+        font-size: 1.2em;
         padding: 1em 0;
+    }
+}
+
+@media screen and(max-width:500px) {
+    .social-media {
+        width: 75%;
     }
 }
 
