@@ -211,7 +211,6 @@ main .contenedor-img {
         height: 100px;
         display: flex;
         margin-top: 1.5em;
-        margin-bottom: 1em;
     }
 
         .parrafo {
@@ -662,7 +661,7 @@ footer {
     margin: auto;
     color: var(--rojo);
     font-weight: 100;
-    padding: 1em .2em 1em .2em;
+    padding: 1em .2em;
     }
 
     .enfasis a{
@@ -674,22 +673,21 @@ footer {
     animation: white-neon 3s infinite alternate;
     }
 
-    @keyframes white-neon {
-        0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
-        text-shadow: 9px 9px 15px var(--gris-c), 
-                        3px 3px 5px var(--gris-85), 
-                        -3px -3px 5px var(--blanco),
-                        -9px -9px 15px var(--gris-c);
-        }
 
-        10%, 15%, 60% {
-            text-shadow: none;
-        }
-        
-        20%, 45%, 75%, 90% {
-            font-size: 1.3em;
-            color: var(--rojo);
-        } 
+
+    
+    .promo .promo-p{
+        font-weight: 400;
+        font-size: 1.5em;
+        color: rgb(112, 26, 26);
+        padding: .2em 0;
+        margin-bottom: .2em;
+    }
+    
+    .promo .desc {
+        font-weight: 300;
+        font-size: 1.4em;
+        color: rgb(223, 0, 0);
     }
 }
 
