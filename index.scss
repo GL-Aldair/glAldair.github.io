@@ -150,13 +150,13 @@ body {
 	border-radius: 10px;
 }
 
-main {
+.main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-main .contenedor-img {
+.main .contenedor-img {
     max-width: 50%;
 }
 
@@ -586,14 +586,14 @@ footer {
 }
 
 @media screen and (max-width: 915px) {
-    main {
+    .main {
         flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
     }
     
-    main .contenedor-img {
+    .main .contenedor-img {
         margin-bottom: 1em;
         justify-content: center;
         align-items: center;
@@ -768,16 +768,5 @@ footer {
 @media screen and(max-width:500px) {
     .social-media {
         width: 75%;
-    }
-}
-
-@media screen and(max-width:350px) {
-    .nav-menu li {
-        margin: 5% 0;
-    }
-
-    .nav-menu li a {
-        padding: 2em 7em;
-        font-size: 12px;
     }
 }
