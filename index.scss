@@ -244,14 +244,62 @@ main .contenedor-img {
             text-shadow: none;
         }
         
-        20%, 45%, 75%, 90% {
-            font-size: 50px;
-            color: var(--rojo);
+        20%, 90% {
+            color: rgb(255, 0, 0);
         } 
     }
 
 
 // EFECTO NEON END
+
+
+// 
+// Promocion
+// 
+
+.promo{
+    width: 100%;
+    text-align: center;
+}
+
+.promo .promo-p{
+    font-weight: 400;
+    font-size: 2em;
+    color: rgb(112, 26, 26);
+    padding: .2em 0;
+    margin-bottom: .2em;
+}
+
+.promo .desc {
+    font-weight: 300;
+    font-size: 1.9em;
+    color: rgb(223, 0, 0);
+}
+
+.promo .promo-p .porcentaje {
+    color: rgb(17, 192, 46);
+
+    animation: porcentaje-neon 4s infinite alternate;
+
+    @keyframes porcentaje-neon {
+        0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+        text-shadow: 9px 9px 15px rgb(17, 192, 46), 
+                        3px 3px 5px rgb(0, 0, 0), 
+                        -3px -3px 5px rgb(255, 255, 255),
+                        -9px -9px 15px rgb(17, 192, 46);
+        }
+
+        10%, 15%, 60% {
+            text-shadow: none;
+        }
+    }
+}
+
+.promo .promo-p .porcentaje i {
+    font-weight: 400;
+    font-size: 1em;
+}
+
 
 
 // 
@@ -261,9 +309,7 @@ main .contenedor-img {
 
 .container__target {
     max-width: 1200px;
-    padding: 20px;
     margin: auto;
-    margin-top: 4em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -273,17 +319,17 @@ main .contenedor-img {
     width: 300px;
     position: relative;
     margin: 5px;
-    transition: all 5s;
-    border-radius: 20px;
+    border-radius: 1em;
+    transition: all .3s;
 }
 
 .target:hover {
-    box-shadow: 1px 1px 20px -10px var(--negro-5);
+    box-shadow: 1px 1px 15px -10px var(--negro);
 }
 
 .target:hover .info__description {
     margin-top: 0;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 1em 1em;
 }
 
 .target:hover .icon {
@@ -295,7 +341,7 @@ main .contenedor-img {
     width: 100%;
     height: 220px;
     background: var(--blanco-242);
-    padding: 20px;
+    padding: 1.2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,11 +349,6 @@ main .contenedor-img {
     z-index: 1;
     transition: all .3s cubic-bezier(.5, 0, 0, 1);
     border-radius: 20px;
-}
-
-.icon i {
-    font-size: 150px;
-    color: var(--blanco);
 }
 
 .info__description {
@@ -321,13 +362,30 @@ main .contenedor-img {
     border-radius: 20px;
 }
 
-.info__description p {
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    display: -webkit-box;
-    display: -moz-box;
-    // display: box;
+.info__description .span {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.info__description .por {
+    font-weight: 300;
+    font-size: 1em;
+    color: rgb(37, 211, 102);
+}
+
+.info__description .antes {
+    color: var(--rojo);
+    text-decoration: line-through;
+}
+
+.info__description .despues {
+    color: rgb(37, 211, 102);
+}
+
+.info__description .p {
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     box-orient: vertical;
@@ -337,34 +395,42 @@ main .contenedor-img {
     overflow: hidden;
 }
 
-.info__description a {
-    padding: 10px 40px;
-    background: transparent;
+.info__description .descripcion {
+    color: rgb(100, 100, 100);
+    margin-bottom: 1.7em;
+}
+
+.info__description .ciudad {
     color: var(--rojo-b4);
-    text-decoration: none;
+    margin-bottom: 1.8em;
+}
+
+.info__description .a {
+    padding: .7em 2em;
+    color: var(--rojo-b4);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1em;
     cursor: pointer;
-    border: 1px solid var(--rojo-b4);
-    border-radius: 20px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 10px -10px var(--negro);
     transition: all .3s;
 }
 
-.info__description a:hover {
-    background: var(--rojo-74);
-    color: var(--blanco);
+.info__description .a:hover {
+    color: var(--rojo);
+    box-shadow: 5px 5px 20px -10px var(--negro);
 }
 
 .c1:hover .icon {
-    background: var(--rojo-74);
+    background: var(--blanco-242);
 }
 
 .c2:hover .icon {
-    background: var(--rojo-74);
+    background: var(--blanco-242);
 }
 
 .c3:hover .icon {
-    background: var(--rojo-74);
+    background: var(--blanco-242);
 }
 
 
@@ -382,17 +448,17 @@ main .contenedor-img {
 
 .ver-todos {
     background: var(--blanco);
-    color: var(--rojo-b4);
-    border-radius: .4em;
-    border: 1px solid var(--rojo-b4);
-    padding: 1em 2em;
+    color: var(--rojo);
+    border-radius: 2em;
+    padding: 1em 2.5em;
     margin: auto;
     transition: all .3s ease;
+    box-shadow: 5px 5px 15px -10px var(--negro);
 }
 
 .ver-todos:hover {
-    background: var(--rojo-b4);
-    color: var(--blanco);
+    color: var(--rojo-b4);
+    box-shadow: 8px 8px 20px -10px var(--negro);
 }
 
 
