@@ -223,7 +223,7 @@ main .contenedor-img {
     }
 
     .enfasis a{
-    color: var(--rojo-b4);
+    color: var(--gris-85);
     font-weight: 300;
     font-size: 45px;
     cursor: pointer;
@@ -244,7 +244,7 @@ main .contenedor-img {
         }
         
         20%, 90% {
-            color: rgb(255, 0, 0);
+            color: var(--rojo);
         } 
     }
 
