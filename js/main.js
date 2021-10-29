@@ -1,8 +1,8 @@
 const typed = new Typed('.typed', {
 	strings: [
-		'<a href="#c1"><i class="paquetes">Chicharrones</i></a>',
-		'<a href="#c2"><i class="paquetes">Gomitas</i></a>',
-		'<a href="#c3"><i class="paquetes">Boing</i></a>'
+		'<a href="#c1"><i class="paquetes">Aros de Durazno</i></a>',
+		'<a href="#c2"><i class="paquetes">Aros de Manzana</i></a>',
+		'<a href="#c3"><i class="paquetes">Astridix</i></a>'
 	],
 
 	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
