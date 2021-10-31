@@ -117,23 +117,17 @@ body {
     margin: 0 .3em;
     text-decoration: none;
     color: var(--rojo);
-    transition: color .5s;
+    transition: all .3s ease;
 }
 
 .nav__item:hover {
-    text-decoration: overline;
-    color: var(--rojo-b4);
+    color: var(--rojo-74);
 }
 
 .active {
     text-decoration: overline;
     color: var(--rojo-b4);
 }
-
-.comprar {
-    display: flex;
-}
-
 
 
 // 
@@ -180,21 +174,24 @@ body {
 
 .btn-link {
     display: inline-block;
-    padding: 10px 30px;
+    padding: .7em 2em;
     border-radius: 100px;
     margin-right: .5em;
     margin-bottom: .5em;
     text-decoration: none;
     background: var(--blanco-242);
     color: var(--rojo);
+    box-shadow: 5px 5px 15px -10px var(--negro-7);
+    transition: all .2s ease;
 }
 
-.btn-link:hover,
-.btn-link.activo {
-   color: var(--blanco);
-   background: var(--rojo-b4);
-}
 
+.btn-link.activo,
+.btn-link:hover {
+    color: var(--blanco);
+    background: var(--rojo-b4);
+    box-shadow: 5px 5px 15px -5px var(--negro-5);
+}
 
 
 
@@ -322,7 +319,7 @@ body {
 }
 
 .target:hover {
-    box-shadow: 1px 1px 15px -10px var(--negro);
+    box-shadow: 5px 5px 15px -5px var(--negro-5);
 }
 
 .target:hover .info__description {
@@ -455,7 +452,6 @@ body {
 }
 
 .ver-todos:hover {
-    color: var(--rojo-b4);
     box-shadow: 8px 8px 20px -10px var(--negro);
 }
 

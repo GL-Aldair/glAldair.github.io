@@ -7,7 +7,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --blanco: rgb(255, 255, 255);
     --blanco-03: rgba(255, 255, 255, 0.3);
     --blanco-242: rgb(242, 242, 242);
-    --blanco-249: rgba(249, 249, 249);
+    --blanco-249: rgb(249, 249, 249);
     --gris-c: rgb(204, 204, 204);
     --gris-85: rgb(85, 85, 85);
     --gris-51: rgb(51, 51, 51);
@@ -115,17 +115,16 @@ body {
     margin: 0 .3em;
     text-decoration: none;
     color: var(--rojo);
-    transition: color .5s;
+    transition: all .3s ease;
 }
 
 .nav__item:hover {
-    text-decoration: overline;
-    color: #B40404;
+    color: var(--rojo-74);
 }
 
 .active {
     text-decoration: overline;
-    color: #B40404;
+    color: var(--rojo-b4);
 }
 
 // 
@@ -134,7 +133,7 @@ body {
 
 .nts__container {
     width: 100%;
-    background: #fff;
+    background: var(--blanco);
     background-image: linear-gradient(to right, rgba(0, 0, 0, .8) 20%, rgba(48, 67, 82, .6) 80%), url(../img/fondogde.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -160,7 +159,7 @@ body {
         font-weight: 300;
         font-size: 2.5em;
         margin: auto;
-        color: #fff;
+        color: var(--blanco);
     }
 
 }
@@ -181,7 +180,7 @@ body {
         }
 
         .enfasis a{
-            color: #fff;
+            color: var(--blanco);
             font-weight: 300;
             font-size: 40px;
             cursor: pointer;
@@ -191,10 +190,10 @@ body {
 
         @keyframes white-neon {
             0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
-                text-shadow: 9px 9px 18px #ccc, 
-                            3px 3px 5px #ffff, 
-                            -3px -3px 5px #ccc,
-                            -9px -9px 27px #ccc;
+                text-shadow: 9px 9px 18px var(--gris-c), 
+                            3px 3px 5px var(--blanco), 
+                            -3px -3px 5px var(--gris-c),
+                            -9px -9px 27px var(--gris-c);
             }
     
             10%, 15%, 60% {
@@ -235,11 +234,11 @@ body {
 .line__footer--content {
     width: 100%;
     height: 2px;
-    background: #ff0000;
+    background: var(--rojo);
 }
 
 footer {
-    background:#fff;
+    background:var(--blanco);
     padding-bottom:.1px;
     font-family: 'Work Sans', sans-serif;
 }
@@ -256,11 +255,11 @@ footer {
 .contact-us {
     margin: auto;
     width: 40%;
-    color: #fff;
+    color: var(--blanco);
 }
 
 .h2-brand{
-    color: #ff0000;
+    color: var(--rojo);
     font-weight: 300;
     font-size: 40px;
     text-decoration: none;
@@ -270,7 +269,7 @@ footer {
     font-weight: 300;
     font-size: 20px;
     margin: auto;
-    color: #B40404;
+    color: var(--rojo-b4);
 }
 
 .social-media {
@@ -285,9 +284,9 @@ footer {
     margin-left:20px;
     width:60px;
     height:60px;
-    background: #f2f2f2;
+    background: var(--blanco-242);
     box-shadow:  19px 19px 38px #bebebe,
-             -19px -19px 38px #ffffff;
+             -19px -19px 38px var(--blanco);
     border-radius:50%;
     text-align:center;
     color:#000;
@@ -304,7 +303,7 @@ footer {
     max-width:1200px;
     margin:auto;
     height:2px;
-    background:#B40404;
+    background:var(--rojo-b4);
     margin-bottom: 30px;
 }
 

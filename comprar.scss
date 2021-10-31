@@ -120,12 +120,11 @@ body {
     margin: 0 .3em;
     text-decoration: none;
     color: var(--rojo);
-    transition: color .5s;
+    transition: all .3s ease;
 }
 
 .nav__item:hover {
-    text-decoration: overline;
-    color: var(--rojo-b4);
+    color: var(--rojo-74);
 }
 
 .active {
