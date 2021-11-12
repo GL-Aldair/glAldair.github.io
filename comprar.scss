@@ -195,17 +195,15 @@ body {
     margin: 10px 20px;
     font-size: 18px;
     font-weight: 400;
-    transition: all .5s ease;
+    transition: all .2s ease-in-out;
 }
 
 .header-comprar .a:hover {
     color: var(--rojo-74);
-    text-decoration: line-through 1px solid var(--rojo-51);
 }
 
 .header-comprar .a.activo {
     color: var(--rojo-b4);
-    text-decoration: line-through 2px solid var(--rojo-5);
 }
 
 
