@@ -15,6 +15,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --negro-5: rgba(0, 0, 0, 0.5);
     --negro-17: rgb(17, 17, 17);
     --negro-7: rgba(0, 0, 0, 0.7);
+    --negro-8: rgba(0, 0, 0, 0.8);
     --negro-9: rgba(0, 0, 0, 0.9);
     --rojo: rgb(255, 0, 0);
     --rojo-b4: rgb(180, 4, 4);
@@ -198,26 +199,7 @@ body {
     
             10%, 15%, 60% {
                 text-shadow: none;
-            }
-        }
-
-        .enfasis a:hover {
-            color: #FBEFF2;
-            animation: red-neon 2s infinite alternate;
-        }
-
-        @keyframes red-neon {
-            0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
-                text-shadow: 9px 9px 18px #F5A9BC, 
-                            3px 3px 5px #FBEFF2, 
-                            -3px -3px 5px #F5A9BC,
-                            -9px -9px 27px #F5A9BC;
-            }
-    
-            10%, 15%, 60% {
-                text-shadow: none;
-            }
-        }
+            }        }
 
     }
 
@@ -286,11 +268,11 @@ footer {
     height:60px;
     background: var(--blanco-242);
     box-shadow:  19px 19px 38px #bebebe,
-             -19px -19px 38px var(--blanco);
+                -19px -19px 38px var(--blanco);
     border-radius:50%;
     text-align:center;
     color:#000;
-    transition: background .6s;
+    transition: all .2s ease-out;
 }
 
 .social-media-icon i {
@@ -434,7 +416,6 @@ footer {
     }
 
     .nav {
-        display: none;
         height: 100%;
         position: fixed;
         top: 0;
@@ -442,15 +423,20 @@ footer {
         right: 0;
         bottom: 0;
         min-height: 100vh;
-        background: var(--negro-9);
+        background: var(--negro-8);
         flex-wrap: row wrap;
         justify-content:center;
         align-items: center;
-        z-index: 99;
-    }
-
-    .nav.activos {
         display: flex;
+        opacity: 0;
+        z-index: 99;
+        transform: translateX(-100%);
+        transition: all .1s ease-in-out;
+    }
+    
+    .nav.activos {
+        transform: translateX(0);
+        opacity: 1;
     }
 
     .nav__items{
@@ -470,9 +456,17 @@ footer {
         padding: calc(100% / 3) 0;
         color: var(--gris-c);
     }
-
+    
+    .nav__item:hover {
+        color: var(--gris-c);
+        text-shadow: 1px 1px 10px #fff;
+    }
+    
     .nav__item.active {
-        color: var(--rojo-b4);
+        color: var(--rojo);
+        text-decoration: none;
+        text-shadow: 1px 1px 10px var(--rojo-b4),
+                    -1px -1px 10px var(--rojo-b4);
     }
 
     .nosotros__p .nosotros__item .parrafo {

@@ -16,7 +16,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --negro-1: rgba(0, 0, 0, 0.1);
     --negro-5: rgba(0, 0, 0, 0.5);
     --negro-7: rgba(0, 0, 0, 0.7);
-    --negro-8: rgba(0, 0, 0, 0.85);
+    --negro-8: rgba(0, 0, 0, 0.8);
     --negro-9: rgba(0, 0, 0, 0.9);
     --negro-17: rgb(17, 17, 17);
     --rojo: rgb(255, 0, 0);
@@ -360,11 +360,11 @@ footer {
     height:60px;
     background: var(--blanco-242);
     box-shadow:  19px 19px 38px #bebebe,
-             -19px -19px 38px var(--blanco);
+                -19px -19px 38px var(--blanco);
     border-radius:50%;
     text-align:center;
     color:var(--negro);
-    transition: background .6s;
+    transition: all .2s ease-out;
 }
 
 .social-media-icon i {
@@ -530,7 +530,6 @@ footer {
     }
 
     .nav {
-        display: none;
         height: 100%;
         position: fixed;
         top: 0;
@@ -542,11 +541,16 @@ footer {
         flex-wrap: row wrap;
         justify-content:center;
         align-items: center;
-        z-index: 99;
-    }
-
-    .nav.activos {
         display: flex;
+        opacity: 0;
+        z-index: 99;
+        transform: translateX(-100%);
+        transition: all .1s ease-in-out;
+    }
+    
+    .nav.activos {
+        transform: translateX(0);
+        opacity: 1;
     }
 
     .nav__items{
@@ -566,9 +570,17 @@ footer {
         padding: calc(100% / 3) 0;
         color: var(--gris-c);
     }
-
+    
+    .nav__item:hover {
+        color: var(--gris-c);
+        text-shadow: 1px 1px 10px #fff;
+    }
+    
     .nav__item.active {
-        color: var(--rojo-b4);
+        color: var(--rojo);
+        text-decoration: none;
+        text-shadow: 1px 1px 10px var(--rojo-b4),
+                    -1px -1px 10px var(--rojo-b4);
     }
 
 
@@ -614,19 +626,24 @@ footer {
         right: 0;
         bottom: 0;
         background: var(--negro-7);
-        display: none;
-        position: fixed;
-        z-index: 100;
-    }
-
-    .header-comprar .padre.activar {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        opacity: 0;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: all .1s ease-in-out;
+    }
+    
+    .header-comprar .padre.activar {
+        transform: translateX(0);
+        opacity: 1;
     }
 
     .header-comprar .categorias {
         width: 80%;
         height: 100vh;
-        margin: auto;
     }
     
     .header-comprar .categorias .a {
@@ -635,16 +652,19 @@ footer {
         text-align: center;
         font-weight: 300;
         color: var(--blanco-e);
-        transition: all .5s ease;
+        transition: all .2s ease;
     }
 
     .header-comprar .categorias .a:hover {
-        color: var(--blanco-249);
-    }
+        text-shadow: 3px 3px 10px var(--blanco),
+                    -3px -3px 10px var(--blanco);
+        text-decoration: none;
+    }                
 
     .header-comprar .categorias .a.activo {
+        text-shadow: 3px 3px 10px var(--rojo);
         color: var(--rojo);
-        text-decoration: line-through 2px solid var(--rojo-74);
+        text-decoration: none;
     }
 }
 
