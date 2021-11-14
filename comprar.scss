@@ -231,9 +231,11 @@ body {
     padding: 0;
     margin: 10px;
     width: calc(33.33333% - 20px);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.grid .item_contenido {
+.grid .item-contenido {
     position: relative;
 }
 
@@ -241,6 +243,11 @@ body {
     width: 100%;
     cursor: pointer;
     vertical-align: top;
+    transition: all .2s ease-in-out;
+}
+
+.grid .item .img:hover {
+    transform: scale(1.03);
 }
 
 
