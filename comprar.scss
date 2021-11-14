@@ -51,6 +51,7 @@ a {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 body {
@@ -260,7 +261,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    z-index: 6;
+    z-index: 101;
 }
 
 .overlay.activo {
@@ -268,16 +269,16 @@ body {
 }
 
 .overlay .img {
-    max-width: 100;
+    max-width: 100%;
 }
 
 .overlay .descripcion {
     display: block;
     background: var(--blanco);
-    padding: 20px;
+    padding: 1em;
     text-align: center;
-    margin-top: 5px;
-    border-radius: 10px;
+    margin-top: .5em;
+    border-radius: .5em;
     max-width: 50%;
 }
 
@@ -288,12 +289,12 @@ body {
 .overlay #btn-cerrar-popup {
     position: absolute;
     background: none;
-    font-size: 20px;
+    font-size: 1.5em;
     color: var(--blanco);
     border: none;
     cursor: pointer;
-    right: -20px;
-    top: -20px;
+    right: -.7em;
+    top: -1em;
 }
 
 
@@ -588,8 +589,8 @@ footer {
     .bar-2 {
         position: fixed;
         font-size: 2em;
-        color: var(--gris-85);
-        margin-top: -4.7em;
+        color: #ff0000;
+        margin-top: -4.6em;
         right: .8em;
         cursor: pointer;
         display: block;

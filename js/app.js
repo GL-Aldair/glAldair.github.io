@@ -12,7 +12,7 @@ window.addEventListener('load', ()=>{
 
 
 // 
-// Agregando el filtrado de imagenes po categorias
+// Agregando el filtrado de imagenes por categorias
 // 
     const enlaces = document.querySelectorAll('#categorias a');
     enlaces.forEach( (elemento) => {

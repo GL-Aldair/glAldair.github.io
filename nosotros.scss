@@ -47,6 +47,7 @@ a {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 body {
@@ -141,13 +142,13 @@ body {
     background-attachment: fixed;
     background-position: center;
     display: flex;
-    flex-wrap: row wrap;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
 .nts__content {
     width: 90%;
-    margin: auto;
     justify-content: center;
     align-items: center;
 }
@@ -170,6 +171,7 @@ body {
 
     .nosotros__item {
         margin: auto;
+        margin-bottom: 2.5em;
         text-align: center;
 
         .parrafo {
@@ -470,7 +472,7 @@ footer {
     }
 
     .nosotros__p .nosotros__item .parrafo {
-        font-size: 1.2em;
+        font-size: 1.5em;
         padding: 1em 0;
     }
 }
