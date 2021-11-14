@@ -452,6 +452,18 @@ body {
 // TARGETAS
 // 
 
+.paquetes-promo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 2em;
+    color: rgb(112, 26, 26);
+    margin-top: 1.5em;
+}
+
+
 .section {
     margin: 1em 0;
     display: flex;
@@ -786,17 +798,17 @@ footer {
 
     
     .promo .promo-p{
-        font-weight: 400;
         font-size: 1.5em;
-        color: rgb(112, 26, 26);
-        padding: .2em 0;
-        margin-bottom: .2em;
     }
     
     .promo .desc {
         font-weight: 300;
-        font-size: 1.4em;
-        color: rgb(223, 0, 0);
+        font-size: 1.5em;
+        color: var(--rojo);
+    }
+
+    .paquetes-promo {
+        font-size: 1.5em;
     }
 }
 
