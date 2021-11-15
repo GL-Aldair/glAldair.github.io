@@ -490,30 +490,36 @@ body {
 
 .container {
     overflow: hidden;
+    user-select: none;
     position: relative;
 }
 
-.btn {
-    cursor: pointer;
-    color: #a0a0a0;
-    padding: .5em;
-    font-weight: 300;
-    font-size: 1em;
-    border-radius: .2em;
-    user-select: none;
+.container .btn {
     position: absolute;
-    top: 40%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     opacity: 0;
     transition: .2s ease-out all;
 }
 
-.targetas:hover .btn {
-    opacity: 1;
+.btn-select {
+    padding: .5em;
+    border-radius: .2em;
+    cursor: pointer;
+    color: var(--negro-5);
+    transition: .2s ease-out all;
 }
 
-.btn:hover {
+.btn-select:hover {
     background: rgba(99, 99, 99, 0.1);
-    color: #0a0a0a;
+    color: var(--negro);
+}
+
+.targetas:hover .btn {
+    opacity: 1;
 }
 
 .next {
@@ -527,8 +533,8 @@ body {
 .spans {
     padding: .06em .4em;
     display: inline-block;
-    transition: all .3s ease-out;
     background: rgba(255, 0, 0, 0.2);
+    transition: all .3s ease-out;
 }
 
 .spans.active {
