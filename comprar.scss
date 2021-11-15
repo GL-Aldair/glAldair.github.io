@@ -415,7 +415,7 @@ footer {
     color:var(--blanco)
 }
 .instagram:hover {
-    background-image: var(--blanco);
+    background: var(--blanco);
     color: #df0101;
 }
 
@@ -536,18 +536,14 @@ footer {
     }
 
     .nav {
-        height: 100%;
+        min-height: 100vh;
+        flex-wrap: wrap;
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        min-height: 100vh;
         background: var(--negro-8);
-        flex-wrap: row wrap;
-        justify-content:center;
-        align-items: center;
-        display: flex;
         opacity: 0;
         z-index: 99;
         transform: translateX(-100%);
@@ -559,22 +555,19 @@ footer {
         opacity: 1;
     }
 
-    .nav__items{
-        width: 90%;
-        height: 90%;
-        align-items: center;
-        justify-content: center;
-        display: grid;
-    }
-
-    .nav__item {
+    .nav__items {
         width: 100%;
         height: 100%;
+        display: grid;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        padding: calc(100% / 3) 0;
+    }
+    
+    .nav__item {
+        width: 100vw;
         color: var(--gris-c);
+        margin: auto;
+        text-align: center;
     }
     
     .nav__item:hover {
