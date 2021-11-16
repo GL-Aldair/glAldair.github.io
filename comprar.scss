@@ -649,6 +649,7 @@ footer {
     .header-comprar .categorias .a {
         width: 100%;
         margin: auto;
+        padding: .8em;
         text-align: center;
         font-weight: 300;
         color: var(--blanco-e);
@@ -678,20 +679,5 @@ footer {
     .menu__container {
         height: 200px;
         max-height: 100vh;
-    }
-
-    .nav-menu li {
-        margin: 20% 0;
-    }
-}
-
-@media screen and(max-width:350px) {
-    .nav-menu li {
-        margin: 5% 0;
-    }
-
-    .nav-menu li a {
-        padding: 2em 7em;
-        font-size: 12px;
     }
 }
