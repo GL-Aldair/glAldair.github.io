@@ -27,3 +27,11 @@ const enlaces = document.querySelectorAll('#categorias a');
 			barra2.classList.remove('activar')
         });
     });
+
+	document.getElementById("back_menu2").addEventListener("click", ocultar_menu);
+	
+	function ocultar_menu(){
+		padre.classList.remove('activar')
+		equis.classList.remove('activar')
+		barra2.classList.remove('activar')
+	}
