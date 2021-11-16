@@ -22,3 +22,18 @@ document.querySelector('.contacto').addEventListener('click', ()=> {
 	x.classList.remove('activos')
 	barra.classList.remove('activos')
 });
+
+document.getElementById("btn_menu").addEventListener("click", mostrar_menu);
+
+document.getElementById("back_menu").addEventListener("click", ocultar_menu);
+
+function mostrar_menu(){
+    nav.style.opacity = "1";
+}
+
+function ocultar_menu(){
+    nav.style.opacity = "0";
+    nav.classList.remove('activos')
+	x.classList.remove('activos')
+	barra.classList.remove('activos')
+}

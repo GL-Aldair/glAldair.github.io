@@ -438,17 +438,18 @@ footer {
     }
 
     .nav__items {
-        width: 100%;
-        height: 100%;
+        width: 50%;
+        height: 90%;
         display: grid;
         align-items: center;
         justify-content: center;
     }
     
     .nav__item {
-        width: 100vw;
+        width: 100%;
         color: var(--gris-c);
         margin: auto;
+        padding: 1.3em 2.5em;
         text-align: center;
     }
     
