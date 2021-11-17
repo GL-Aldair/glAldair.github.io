@@ -1,0 +1,102 @@
+@import 'secciones/reset' , 'secciones/menu-nav' , 'secciones/footer' , 'secciones/keyframes';
+
+// 
+// QUIENES SOMOS
+// 
+
+.nts__container {
+    width: 100%;
+    background: var(--blanco);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .8) 20%, rgba(48, 67, 82, .6) 80%), url(../img/fondogde.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nts__content {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros {
+    margin: 2em auto .5em auto;
+    display: flex;
+    
+    .subtitulo {
+        font-weight: 300;
+        font-size: 2.5em;
+        margin: auto;
+        color: var(--blanco);
+    }
+
+}
+
+.nosotros__p {
+    display: flex;
+
+    .nosotros__item {
+        margin: auto;
+        margin-bottom: 2.5em;
+        text-align: center;
+
+        .parrafo {
+            color: #BDBDBD;
+            font-weight: 200;
+            font-size: 2em;
+            margin: 1em 0;
+            padding: 1em;
+        }
+
+        .enfasis a{
+            color: var(--blanco);
+            font-weight: 300;
+            font-size: 40px;
+            cursor: pointer;
+            text-decoration: none;
+            animation: white-neon1 3s infinite alternate;
+        }
+    }
+
+}
+
+@media screen and(max-width:630px) {
+    .nosotros__p .nosotros__item .parrafo {
+        font-size: 1.5em;
+        padding: 1em 0;
+    }
+}
+
+@media screen and(max-width:600px) {
+    .social-media {
+        width: 60%;
+    }
+}
+
+@media screen and(max-width:550px) {
+    .social-media {
+        width: 70%;
+    }
+}
+
+@media screen and(max-width:530px) {
+    .nosotros__p .nosotros__item .parrafo {
+        font-size: 1.5em;
+        padding: 1em 0;
+    }
+}
+
+@media screen and(max-width:450px) {
+    .nosotros .subtitulo {
+        font-size: 2em;
+    }
+
+    .nosotros__p .nosotros__item .enfasis a {
+        font-size: 1.7em;
+    }
+}
