@@ -22,6 +22,8 @@
 
 .logo {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo__item {
@@ -30,13 +32,12 @@
     text-decoration: none;
     font-weight: 300;
     font-size: 42px;
-    margin: 85px auto 25px auto;
+    margin: 85px 0 25px;
 }
 
 .line {
     width: 70%;
     height: 1px;
-    display: flex;
     background: var(--rojo);
     margin: auto;
     margin-bottom: 1em;
@@ -49,10 +50,11 @@
 .nav {
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav__items {
-    margin: auto;
     font-weight: 300;
     font-size: 15px;
 }
@@ -61,6 +63,7 @@
     margin: 0 .3em;
     text-decoration: none;
     color: var(--rojo);
+    font-size: 1.1em;
     transition: all .3s ease;
 }
 
