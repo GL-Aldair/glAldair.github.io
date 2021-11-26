@@ -56,13 +56,13 @@
         .enfasis a{
             color: var(--blanco);
             font-weight: 300;
-            font-size: 40px;
+            font-size: 1.7em;
             cursor: pointer;
             text-decoration: none;
             animation: white-neon1 3s infinite alternate;
         }
     }
-
+    
 }
 
 @media screen and(max-width:630px) {
@@ -95,8 +95,8 @@
     .nosotros .subtitulo {
         font-size: 2em;
     }
-
-    .nosotros__p .nosotros__item .enfasis a {
-        font-size: 1.7em;
+    
+    .nosotros__p .nosotros__item .enfasis a{
+        font-size: 1.30em;
     }
 }
