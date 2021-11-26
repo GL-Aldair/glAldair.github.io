@@ -320,6 +320,7 @@
 
 .container {
     overflow: hidden;
+    cursor: pointer;
     user-select: none;
     position: relative;
 }
@@ -338,16 +339,16 @@
     padding: .5em;
     border-radius: .2em;
     cursor: pointer;
-    color: var(--negro-5);
+    color: var(--gris-c);
     transition: .2s ease-out all;
 }
 
 .btn-select:hover {
     background: rgba(99, 99, 99, 0.1);
-    color: var(--negro);
+    color: var(--negro-5);
 }
 
-.targetas:hover .btn {
+.container:hover .btn {
     opacity: 1;
 }
 
