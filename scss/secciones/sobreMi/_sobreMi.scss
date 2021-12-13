@@ -1,0 +1,87 @@
+.main-nosotros{
+    // background: lightblue;
+    background-image: url("../assets/img/bcg1.png");
+    @include background-image;
+    background-attachment: fixed;
+    width: 100%;
+    color: $blanco;
+    overflow: hidden;
+    .title{
+        // background: lightcoral;
+        background: $negro-5;
+        text-align: center;
+        padding: 1rem;
+        .h1{
+            margin: 0;
+            font-family: $tipo-principal;
+            font-size: 4rem;
+            font-weight: 300;
+        }
+        .h2{
+            font-family: $tipo-cursiva;
+            font-size: 2rem;
+            font-weight: 300;
+            margin: 1rem;
+            user-select: none;
+        }
+    }
+    .targets{
+        // background: lightcoral;
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+        .target{
+            // background: lightblue;
+            padding: 5rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include transition;
+            &:hover{
+                text-align: center;
+                transform: scale(1.05);
+            }
+            &:hover .div{
+                background: $negro;
+                @include neo;
+            }
+            .div{
+                background: $negro-5;
+                max-width: 500px;
+                margin: 0 1rem;
+                font-family: $tipo_cursiva;
+                font-weight: 300;
+                font-size: 1.5rem;
+                border-radius: .5rem;
+                @include transition;
+                .p{
+                    padding: 3rem;
+                }
+            }
+        }
+        .target1{
+            // justify-content: flex-start;
+            &:hover{
+                transform: translateX(10%) scale(1.1);
+            }
+        }
+        .target2{
+            // justify-content: flex-end;
+            &:hover{
+                transform: translateX(-10%) scale(1.1);
+            }
+        }
+        .target3{
+            // justify-content: flex-start;
+            &:hover{
+                transform: translateX(10%) scale(1.1);
+            }
+        }
+        .target4{
+            // justify-content: flex-end;
+            &:hover{
+                transform: translateX(-10%) scale(1.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    // 
+    // Neumorphism
+    // 
+    @mixin neo {
+        box-shadow: 0 0 10px $color4;
+    }
+    @mixin neo-active {
+        box-shadow: 0 0 5px $color4;
+    }
+    @mixin neo-hover {
+        box-shadow: 0 0 25px $color5;
+    }
+
+@mixin transition {
+    transition: all .2s ease-in-out;
+}
+@mixin transition-low {
+    transition: all .5s ease-in-out;
+}
+@mixin text-shadow {
+    text-shadow: 2px 2px 15px $color1;
+}
+@mixin background-image {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,85 @@
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes translate {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+// 
+// ANIMACION DE IMAGEN DE FONDO
+// @keyframes bcg {
+//     0%,25%{
+//         background-image: url(../assets/img/image2.jpg);
+//     }
+//     40%,65%{
+//         background-image: url(../assets/img/image3.jpg);
+//     }
+//     80%,100%{
+//         background-image: url(../assets/img/image1.jpg);
+//     }
+// }
+
+
+@keyframes box-shadow {
+    10%{
+        box-shadow: 2px 2px 20px $color5;
+    }
+    25%{
+        box-shadow: none;
+    }
+    30%{
+        box-shadow: 2px 2px 20px $color5;
+    }
+    60%{
+        box-shadow: none;
+    }
+    90%{
+        box-shadow: 2px 2px 20px $color5;
+    }
+    100%{
+        box-shadow: none;
+    }
+}
+@keyframes text-shadow {
+    10%{
+        text-shadow: 10px 10px 20px $color4;
+    }
+    25%{
+        text-shadow: none;
+    }
+    30%{
+        text-shadow: 10px 10px 20px $color4;
+    }
+    60%{
+        text-shadow: none;
+    }
+    90%{
+        text-shadow: 10px 10px 20px $color4;
+    }
+    100%{
+        text-shadow: none;
+    }
+}
+// 
+// ANIMACION DEL MODAL
+// 
+@keyframes move2 {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(5);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,10 @@
+// Carpeta Root
+@import 'root/variables','root/mixin','root/root','root/keyframes';
+// Carpeta Componentes
+@import 'componentes/nav','componentes/footer';
+
+// Carpeta Secciones
+@import 'secciones/index/index',
+        'secciones/secciones/secciones',
+        'secciones/sobreMi/sobreMi',
+        'secciones/contacto/contacto';

@@ -1,0 +1,164 @@
+.bar{
+    display: none;
+}
+.header{
+    // background: lightblue;
+    width: 100%;
+    color: $color8;
+    .nav{
+        // background: lightcoral;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .logo{
+            // background: lightcyan;
+            font-size: 2.5rem;
+            margin: 0 .5em;
+            .a{
+                // background: lightgoldenrodyellow;
+                font-family: $tipo-principal;
+                font-weight: 300;
+                padding: 0 .5rem;
+                color: $color4;
+            }
+            .index-a{
+                display: none;
+            }
+        }
+        .ul{
+            // background: lightgreen;
+            @include flex;
+            margin: .5em 1em;
+            .li{
+                // background: lightsalmon;
+                font-size: 1.5rem;
+                margin: .5em 0;
+                .a{
+                    // background: lightslategray;
+                    font-family: $tipo-cursiva;
+                    font-weight: 300;
+                    padding: .2em .5em;
+                    border-radius: .2em;
+                    @include transition;
+                    &.active{
+                        color: $color4;
+                    }
+                    &:hover{
+                        color: $color4;
+                        @include neo;
+                    }
+                }
+            }
+        }
+        .contacto{
+            display: none;
+        }
+    }
+}
+
+@media screen and(max-width:750px) {
+    .bar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        font-size: 2.5rem;
+        color: $color4;
+        margin: 1.5rem;
+        cursor: pointer;
+    }
+    .bar-Y{
+        display: none;
+        z-index: 2;
+        &.active{
+            display: block;
+        }
+    }
+    .bar-X{
+        font-size: 3rem;
+        margin-top: 1.2rem;
+        display: none;
+        z-index: 5;
+        &.active{
+            display: block;
+        }
+    }
+    .header{
+        // background: lightblue;
+        position: fixed;
+        background: #000;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 4;
+        @include flex;
+        transform: translate(100%);
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        &.active{
+            transform: translate(0);
+            opacity: 1;
+        }
+        .nav{
+            // background: lightcoral;
+            width: 30rem;
+            margin: 2rem;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            overflow: hidden;
+            .logo{
+                font-size: 3rem;
+                margin-top: 2rem;
+                .index-a{
+                    display: block;
+                }
+            }
+            .ul{
+                // background: lightblue;
+                flex-direction: column;
+                margin: 2rem;
+                .li{
+                    // background: lightsalmon;
+                    font-size: 1.5rem;
+                    margin: .5em 0;
+                    .a{
+                        // background: lightgoldenrodyellow;
+                        padding: 0 3rem;
+                    }
+                }
+            }
+            .contacto{
+                // background: lightgray;
+                display: block;
+                width: 100%;
+                margin-bottom: 1rem;
+                .redes-sociales{
+                    @include flex;
+                    .icon{
+                        font-size: 1.5rem;
+                        .a{
+                            padding: 0 1rem;
+                            @include transition;
+                            &:hover{
+                                color: $color4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:340px) {
+    .header{
+        .nav{
+            .logo{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
