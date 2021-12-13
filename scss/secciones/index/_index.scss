@@ -171,6 +171,20 @@
         }
     }
 }
+@media screen and(max-width:600px) {
+    .section-index {
+        .title-section{
+            .h2{
+                padding-top: 6rem;
+                font-size: 3rem;
+            }
+            .h2-p{
+                width: 90%;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
 @media screen and(max-width:420px) {
     .section-index {
         .title-section{
