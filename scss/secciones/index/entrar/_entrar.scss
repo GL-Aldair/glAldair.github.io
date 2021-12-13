@@ -3,8 +3,8 @@
 // 
 
 .fixed-opacity{
-    background: #000000;
-    color: $blanco;
+    background: $color10;
+    color: $color1;
     position: fixed;
     width: 100%;
     min-height: 100vh;
@@ -16,7 +16,7 @@
     .title{
         // background: lightblue;
         position: absolute;
-        background: $negro-5;
+        background: $color10;
         width: 90%;
         height: 90%;
         @include flex;
@@ -37,7 +37,7 @@
             font-family: $tipo-cursiva;
             font-weight: 300;
             font-size: 2rem;
-            border: 1px solid $blanco;
+            border: 1px solid $color1;
             padding: 1rem 3rem;
             border-radius: 5rem;
             margin: 2rem;
@@ -45,7 +45,7 @@
             @include neo;
             @include transition;
             &:hover{
-                box-shadow: 0 0 20px #fff;
+                box-shadow: 0 0 20px $color1;
                 text-shadow: 0 0 20px $color4;
             }
         }

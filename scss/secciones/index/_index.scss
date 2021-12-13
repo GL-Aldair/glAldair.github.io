@@ -2,52 +2,9 @@
 // IMPORTANDO LOS ESTILOS DEL MODAL
 @import 'entrar/entrar';
 
-.main-index{
-    // background: lightslategray;
-    width: 90%;
-    height: 90vh;
-    margin: auto;
-    overflow: hidden;
-    background-image: url(../assets/img/image1.jpg);
-    @include background-image;
-    background-attachment: fixed;
-    position: relative;
-    .title{
-        // background: lightblue;
-        background: $negro-3;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        @include flex;
-        .h2{
-            // background: lightcoral;
-            font-family: $tipo-principal;
-            font-weight: 300;
-            font-size: 5rem;
-            @include transition;
-            &:hover{
-                transform: scale(1.1);
-            }
-            .a{
-                // background: lightgrey;
-                color: $blanco;
-                // padding: .5em;
-                // border: solid 2px $color5;
-                border-radius: .1em;
-                animation: text-shadow 3s linear infinite;
-            }
-        }
-    }
-}
-
 .section-index {
     // background: lightblue;
     width: 100%;
-    margin-top: 10em;
     overflow: hidden;
     @include flex;
     flex-direction: column;
@@ -59,7 +16,28 @@
         font-size: 3rem;
         .h2{
             padding: .5em;
-            margin-bottom: 5rem;
+            user-select: none;
+        }
+        .line{
+            width: 90%;
+            height: 2px;
+            margin: 0 auto;
+            background: $color4;
+        }
+        .h2-p{
+            width: 90%;
+            font-family: $tipo-cursiva;
+            font-weight: 300;
+            font-size: 1.8rem;
+            margin: 1.5rem auto;
+            color: $color3;
+        }
+        .h3-p{
+            font-family: $tipo-cursiva;
+            font-weight: 300;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            color: $color3;
         }
     }
     .derecha{
@@ -71,8 +49,7 @@
     .caja{
         // background: lightcoral;
         width: 100%;
-        // margin-bottom: 15rem;
-        padding-bottom: 10rem;
+        margin-bottom: 5rem;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -147,16 +124,26 @@
 }
 
 
-@media screen and(max-width:750px) {
-    .main-index{
-        // background: lightslategray;
-        width: 100%;
-        height: 100vh;
-    }
-    
+@media screen and(max-width:800px) {
     .section-index {
         .title-section{
             font-size: 2rem;
+            .h2{
+                font-size: 4rem;
+            }
+        }
+    }
+}
+@media screen and(max-width:750px) {
+    .section-index {
+        .title-section{
+            .h2{
+                font-size: 3rem;
+            }
+            .h2-p{
+                width: 90%;
+                font-size: 1.6rem;
+            }
         }
         .caja{
             .info-description{
@@ -185,17 +172,6 @@
     }
 }
 @media screen and(max-width:420px) {
-    .main-index{
-        .title{
-            .h2{
-                font-size: 4rem;
-                .a{
-                    color: $blanco;
-                }
-            }
-        }
-    }
-    
     .section-index {
         .title-section{
             font-size: 1.6rem;

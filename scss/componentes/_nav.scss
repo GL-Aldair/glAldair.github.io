@@ -66,27 +66,36 @@
         color: $color4;
         margin: 1.5rem;
         cursor: pointer;
+        user-select: none;
     }
     .bar-Y{
-        display: none;
         z-index: 2;
+        transform: scale(0);
+        opacity: 0;
+        @include transition-low;
         &.active{
-            display: block;
+            display: flex;
+            transform: scale(1);
+            opacity: 1;
         }
     }
     .bar-X{
         font-size: 3rem;
-        margin-top: 1.2rem;
-        display: none;
+        margin-top: 1.4rem;
+        display: flex;
+        transform: translateX(200%);
+        opacity: 0;
         z-index: 5;
+        @include transition-low;
         &.active{
-            display: block;
+            transform: translateX(0);
+            opacity: 1;
         }
     }
     .header{
         // background: lightblue;
         position: fixed;
-        background: #000;
+        background: $color10;
         width: 100%;
         height: 100%;
         top: 0;
@@ -128,6 +137,7 @@
                     .a{
                         // background: lightgoldenrodyellow;
                         padding: 0 3rem;
+                        color: $color3;
                     }
                 }
             }
@@ -142,6 +152,7 @@
                         font-size: 1.5rem;
                         .a{
                             padding: 0 1rem;
+                            color: $color3;
                             @include transition;
                             &:hover{
                                 color: $color4;
