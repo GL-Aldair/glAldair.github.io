@@ -1,0 +1,101 @@
+.main-contacto{
+    // background: lightblue;
+    color: $color4;
+    width: 100%;
+    overflow: hidden;
+    .title{
+        // background: lightcoral;
+        width: 100%;
+        text-align: center;
+        .h1{
+            margin: 0;
+            font-family: $tipo-principal;
+            font-weight: 300;
+            font-size: 4.5rem;
+            padding-bottom: .5rem;
+        }
+        .line{
+            width: 80%;
+            height: 2px;
+            margin: 0 auto;
+            background: $color4;
+        }
+    }
+    .section{
+        // background: lightgray;
+        width: 100%;
+        .h2{
+            // background: lightgreen;
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            font-family: $tipo-cursiva;
+            font-weight: 300;
+            font-size: 2rem;
+            padding: 1rem 0;
+        }
+        .redes-sociales{
+            // background: grey;
+            width: 90%;
+            margin: auto;
+            .item{
+                // background: lightsalmon;
+                width: 90%;
+                margin: 1rem auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 2px solid $color5;
+                @include transition;
+                &:hover{
+                    border-bottom: 2px solid $color4;
+                    .icon{
+                        transform: scale(1.15);
+                    }
+                }
+                .icon{
+                    font-size: 3rem;
+                    margin: 1rem;
+                    @include transition;
+                }
+                .info{
+                    font-family: $tipo-normal;
+                    font-weight: 300;
+                    font-size: 2rem;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:750px){
+    .main-contacto{
+        .title{
+            .h1{
+                font-size: 4rem;
+                padding-top: 5rem;
+            }
+        }
+        .section{
+            .h2{
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    .main-contacto{
+        .title{
+            .h1{
+                font-size: 3.5rem;
+            }
+        }
+        .section{
+            .h2{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
