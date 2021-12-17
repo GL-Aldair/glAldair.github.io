@@ -6,7 +6,7 @@
     // background: lightblue;
     width: 100%;
     overflow: hidden;
-    @include flex;
+    @include flex(center,center);
     flex-direction: column;
     .title-section{
         width: 100%;
@@ -55,7 +55,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
         opacity: 0;
-        @include transition-low;
+        @include transition(all,.5s,ease-in-out);
         &.visible{
             opacity: 1;
             transform: translateX(0) scale(1);
@@ -63,7 +63,7 @@
         .info-description{
             // background: lightgreen;
             max-width: 700px;
-            @include flex;
+            @include flex(center,center);
             flex-direction: column;
             .h3{
                 color: $color1;
@@ -96,7 +96,7 @@
             }
             .img{
                 width: 100%;
-                @include transition;
+                @include transition(all,.2s,ease-in-out);
             }
             .a{
                 // background: lightblue;
@@ -109,12 +109,12 @@
                 left: 0;
                 bottom: 0;
                 right: 0;
-                @include flex;
+                @include flex(center,center);
                 font-family: $tipo-principal;
                 font-weight: 300;
                 font-size: 3.5rem;
                 opacity: 0;
-                @include transition;
+                @include transition(all,.2s,ease-in-out);
             }
         }
     }

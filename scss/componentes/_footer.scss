@@ -1,7 +1,7 @@
 .line{
     width: 100%;
     margin-top: 4em;
-    @include flex;
+    @include flex(center,center);
     .line{
         width: 95%;
         height: 2px;
@@ -36,7 +36,7 @@
                 margin: .5em 0;
                 .a{
                     // background: lightskyblue;
-                    @include transition;
+                    @include transition(all,.2s,ease-in-out);
                     &:hover{
                         color: $color5;
                     }
@@ -58,7 +58,7 @@
         // background: lightyellow;
         background: $color8;
         width: 100%;
-        @include flex;
+        @include flex(center,center);
         overflow: hidden;
         .p{
             // background: lightpink;
@@ -69,7 +69,7 @@
                 // background: lightslategrey;
                 .a{
                     // background: lightcyan;
-                    @include transition;
+                    @include transition(all,.2s,ease-in-out);
                     &:hover{
                         color: $color5;
                     }
@@ -97,7 +97,7 @@
                 .a{
                     padding: .5em;
                     color: $color5;
-                    @include transition;
+                    @include transition(all,.2s,ease-in-out);
                     &:hover{
                         color: $color2;
                     }

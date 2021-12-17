@@ -9,17 +9,17 @@
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    @include flex;
+    @include flex(center,center);
     z-index: 5;
     user-select: none;
-    @include transition;
+    @include transition(all,.2s,ease-in-out);
     .title{
         // background: lightblue;
         position: absolute;
         background: $color10;
         width: 90%;
         height: 90%;
-        @include flex;
+        @include flex(center,center);
         flex-direction: column;
         .h1{
             font-family: $tipo-principal;
@@ -39,11 +39,10 @@
             font-size: 2rem;
             border: 1px solid $color1;
             padding: 1rem 3rem;
-            border-radius: 5rem;
             margin: 2rem;
             cursor: pointer;
-            @include neo;
-            @include transition;
+            @include neo(0,0,10px,$color4,5rem);
+            @include transition(all,.2s,ease-in-out);
             &:hover{
                 box-shadow: 0 0 20px $color1;
                 text-shadow: 0 0 20px $color4;

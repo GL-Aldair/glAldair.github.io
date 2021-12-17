@@ -1,6 +1,6 @@
 .main-contacto{
     // background: lightblue;
-    color: $color4;
+    color: $color1;
     width: 100%;
     overflow: hidden;
     .title{
@@ -26,6 +26,7 @@
         width: 100%;
         .h2{
             // background: lightgreen;
+            color: $color2;
             width: 90%;
             margin: auto;
             text-align: center;
@@ -40,6 +41,7 @@
             margin: auto;
             .item{
                 // background: lightsalmon;
+                color: $color4;
                 width: 90%;
                 margin: 1rem auto;
                 display: flex;
@@ -47,9 +49,11 @@
                 align-items: center;
                 justify-content: space-between;
                 border-bottom: 2px solid $color5;
-                @include transition;
+                user-select: none;
+                @include transition(all,.2s,ease-in-out);
                 &:hover{
                     border-bottom: 2px solid $color4;
+                    color: $color1;
                     .icon{
                         transform: scale(1.15);
                     }
@@ -57,7 +61,7 @@
                 .icon{
                     font-size: 3rem;
                     margin: 1rem;
-                    @include transition;
+                    @include transition(all,.2s,ease-in-out);
                 }
                 .info{
                     font-family: $tipo-normal;

@@ -28,7 +28,7 @@
         }
         .ul{
             // background: lightgreen;
-            @include flex;
+            @include flex(center,center);
             margin: .5em 1em;
             .li{
                 // background: lightsalmon;
@@ -40,13 +40,13 @@
                     font-weight: 300;
                     padding: .2em .5em;
                     border-radius: .2em;
-                    @include transition;
+                    @include transition(all,.2s,ease-in-out);
                     &.active{
                         color: $color4;
                     }
                     &:hover{
                         color: $color4;
-                        @include neo;
+                        @include neo(0,0,10px,$color4,.3rem);
                     }
                 }
             }
@@ -72,7 +72,7 @@
         z-index: 2;
         transform: scale(0);
         opacity: 0;
-        @include transition-low;
+        @include transition(all,.5s,ease-in-out);
         &.active{
             display: flex;
             transform: scale(1);
@@ -86,7 +86,7 @@
         transform: translateX(200%);
         opacity: 0;
         z-index: 5;
-        @include transition-low;
+        @include transition(all,.5s,ease-in-out);
         &.active{
             transform: translateX(0);
             opacity: 1;
@@ -103,7 +103,7 @@
         bottom: 0;
         right: 0;
         z-index: 4;
-        @include flex;
+        @include flex(center,center);
         transform: translate(100%);
         opacity: 0;
         transition: all 1s ease-in-out;
@@ -147,13 +147,13 @@
                 width: 100%;
                 margin-bottom: 1rem;
                 .redes-sociales{
-                    @include flex;
+                    @include flex(center,center);
                     .icon{
                         font-size: 1.5rem;
                         .a{
                             padding: 0 1rem;
                             color: $color3;
-                            @include transition;
+                            @include transition(all,.2s,ease-in-out);
                             &:hover{
                                 color: $color4;
                             }

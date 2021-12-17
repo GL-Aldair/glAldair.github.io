@@ -1,0 +1,110 @@
+.main-galeria{
+    width: 100%;
+    .title{
+        width: 100%;
+        text-align: center;
+        color: $color1;
+        .h1{
+            font-family: $tipo-principal;
+            font-weight: 300;
+            font-size: 4.5rem;
+            margin: 0;
+            padding: 1rem;
+        }
+        .line{
+            width: 90%;
+            height: 2px;
+            margin: 1rem auto 3rem;
+            background: $color4;
+        }
+    }
+    .ul{
+        width: 80%;
+        margin: auto;
+        // background: lightgray;
+        display: grid;
+        padding: .5em;
+        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+        gap: 1em;
+        .li{
+            // background: orange;
+            overflow: hidden;
+            margin: .5rem;
+            @include neo(0,0,10px,$color4,.5rem);
+            &:hover .a .img{
+                transform: scale(1);
+            }
+            .a{
+                .img{
+                    height: 100%;
+                    transition: all .3s ease;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    
+    .lightbox{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $blanco-5;
+        z-index: 2;
+        @include flex(center,center);
+        flex-direction: column;
+        flex-wrap: nowrap;
+        transform: scale(1.1);
+        opacity: 0;
+        @include transition(all,.3s,ease);
+        pointer-events: none;
+        user-select: none;
+        &.activo{
+            transform: scale(1);
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .cerrar{
+            background: $color5;
+            color: #fff;
+            width: 5em;
+            height: 3em;
+            margin: 0 0 1em;
+            padding: 0 1em;
+            border: none;
+            @include neo(0,0,10px,$color4,.5rem);
+            cursor: pointer;
+            @include transition(all,.2s,ease-in-out);
+            &:hover{
+                background: $color4;
+            }
+        }
+        .grande{
+            width: 80%;
+            height: 80vh;
+            @include neo(0,0,10px,$color4,5rem);
+            border-radius: .5em;
+        }
+    }
+}
+
+@media screen and(max-width:750px) {
+    .main-galeria{
+        .title{
+            padding-top: 4rem;
+        }
+    }
+}
+@media screen and(max-width:420px) {
+    .main-galeria{
+        .title{
+            .h1{
+                font-size: 4rem;
+            }
+        }
+        .ul{
+            grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+        }
+    }
+}

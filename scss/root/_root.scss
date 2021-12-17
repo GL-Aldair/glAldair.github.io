@@ -23,6 +23,14 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    ::-webkit-scrollbar{
+        width: 2px;
+        background: $color10;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: $color4;
+        border-radius: 5px;
+    }
 }
 img, figure {
     max-width: 100%;
